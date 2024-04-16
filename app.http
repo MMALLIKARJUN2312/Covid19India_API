@@ -1,0 +1,41 @@
+###
+GET http://localhost:3000/states/
+
+###
+GET http://localhost:3000/states/31
+
+###
+POST http://localhost:3000/districts/50
+Content-Type : application/json
+{
+    "distritName" : "Mahabubnagar",
+    "stateId" : 31,
+    "cases" : 2000,
+    "cured" : 1800,
+    "active" : 200,
+    "deaths" : 5
+}
+
+###
+GET http://localhost:3000/districts/322
+
+###
+DELETE http://localhost:3000/districts/320
+
+###
+PUT http://localhost:3000/districts/
+Content-Type : application/json
+{
+    "districtName" : "Nadia",
+    "stateId" : 3,
+    "cases" : 9628,
+    "cured" : 6524,
+    "active" : 3000,
+    "deaths" : 104,
+}
+
+###
+GET http://localhost:3000/states/3/stats/
+
+###
+GET http://localhost:3000/districts/3/details/
